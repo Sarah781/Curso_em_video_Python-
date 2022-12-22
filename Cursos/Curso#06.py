@@ -7,10 +7,10 @@
 
 
 #Desafio03
-#n1=int(input('Primeiro Número: '))
-#n2=int(input('Segundo Número: '))
-#s=n1+n2
-#print('a soma entre {} + {} vale {} '.format(n1,n2,s))
+n1=int(input('Primeiro Número: '))
+n2=int(input('Segundo Número: '))
+s=n1+n2
+print('a soma entre {} + {} vale {} '.format(n1,n2,s))
 
 n=input('Digite algo: ')
 print(n.isdecimal())
