@@ -34,59 +34,73 @@
 #______________________________________________________________________________________________
 
 #Desafio 05 Mostre o número inteiro, seu antecessor e sucessor
-#n=int(input('Digite um Número:'))
-#print ('O antecessor do numero {} é {} e seu sucessor é {}'.format(n, n-1, n+1))
+n=int(input('Digite um Número:'))
+print ('O antecessor do numero {} é {} e seu sucessor é {}'.format(n, n-1, n+1))
 
 #______________________________________________________________________________________________
 
 #Desafio 06 leia um número e mostre o seu dobro, triplo e raiz quadrada
-#n=int(input('Digite um número:'))
-#print('O dobro do número {}, é {}. \nO triplo é {}. \nE a sua raiz quadrada é {:.2f}'.format(n,n*2,n*3,n**(1/2)))
+n=int(input('Digite um número:'))
+print('O dobro do número {}, é {}. \nO triplo é {}. \nE a sua raiz quadrada é {:.2f}'.format(n,n*2,n*3,n**(1/2)))
 
 #______________________________________________________________________________________________
 
 #Desafio 07 leia as duas notas de um aluno, calcule e mostre a sua média 
-#n1=float(input('Digite a primeira nota:'))
-#n2=float(input('Insira a segunda nota:'))
-#media=(n1+n2)/2
-#print('A média final é {}'.format(media))
+n1=float(input('Digite a primeira nota:'))
+n2=float(input('Insira a segunda nota:'))
+media=(n1+n2)/2
+print('A média final é {}'.format(media))
 
 #______________________________________________________________________________________________
 
-#Desafio 08 leia um valor em metros e exiba convertido em centímetros a milímetros
-#n=float(input('Insira um número:'))
-#cent=(n*100)
-#mil=(n*1000)
-#print('O valor {}, em centímetros é {:.2f}, e em milímetros é {:.2f}'.format(n,cent,mil))
+#Desafio 08 leia um valor em metros e exiba convertido em centímetros a milímetrosn=float(input('Insira um número:'))
+cent=(n*100)
+mil=(n*1000)
+print('O valor {}, em centímetros é {:.2f}, e em milímetros é {:.2f}'.format(n,cent,mil))
 
 #______________________________________________________________________________________________
 
 #Desafio 09 leia um número qualquer e mostre na tela a sua tabuada
-#n=int(input('Insira um número para tabuada:'))
-#print('{} X {:2} = {}'.format(n,1,n*1))
-#print('{} X {:2} = {}'.format(n,2,n*2))
-#print('{} X {:2} = {}'.format(n,3,n*3))
-#print('{} X {:2} = {}'.format(n,4,n*4))
-#print('{} X {:2} = {}'.format(n,5,n*5))
-#print('{} X {:2} = {}'.format(n,6,n*6))
-#print('{} X {:2} = {}'.format(n,7,n*7))
-#print('{} X {:2} = {}'.format(n,8,n*8))
-#print('{} X {:2} = {}'.format(n,9,n*9))
-#print('{} X {:2} = {}'.format(n,10,n*10))
+n=int(input('Insira um número para tabuada:'))
+print('{} X {:2} = {}'.format(n,1,n*1))
+print('{} X {:2} = {}'.format(n,2,n*2))
+print('{} X {:2} = {}'.format(n,3,n*3))
+print('{} X {:2} = {}'.format(n,4,n*4))
+print('{} X {:2} = {}'.format(n,5,n*5))
+print('{} X {:2} = {}'.format(n,6,n*6))
+print('{} X {:2} = {}'.format(n,7,n*7))
+print('{} X {:2} = {}'.format(n,8,n*8))
+print('{} X {:2} = {}'.format(n,9,n*9))
+print('{} X {:2} = {}'.format(n,10,n*10))
 #______________________________________________________________________________________________
 
-#Desafio 10 leia quanto dinheiro ela tem na carteira e mostre quantos dólares ela pode comprar Considere 1 dólarR$3,27
+#Desafio 10 leia quanto dinheiro ela tem na carteira e mostre quantos dólares ela pode comprar 
+# Considere 1 dólarR$3,27
+
 din=float(input('Quanto dinheiro você tem na carteira? R$'))
 dolar=din/3.27
 print('Com R${:.2f} você pode comprar US${:.2f}'.format(din,dolar))
 #______________________________________________________________________________________________
 
-#Desafio 11 leia a largura e a altura de uma parede em metros, calcule a sua área e a quantidade de tinta necessária para pinta-la sabendo que cada litro de tintapinta uma área de 2m2
+#Desafio 11 leia a largura e a altura de uma parede em metros, calcule a sua área e a quantidade de tinta
+#necessária para pinta-la sabendo que cada litro de tinta pinta uma área de 2m2
+l=float(input('largura:'))
+a=float(input('altura:'))
+area=l*a
+tinta=area/2
+print('Sua parede tem a dimensão de {} X {} e sua área é de {}m²'.format(l,a,area))
+print('Para printar essa parede você precisará de {}l de tinta'.format(tinta))
 
 #______________________________________________________________________________________________
 
 #Desafio 12 leia o preço de um produto e mostre seu novo preço com 5% de desconto
+prod=float(input('Preço do Produto R$'))
+desconto=prod-(prod*5/100)
+print('O preço do produto com desconto é R${:.2f}'.format(desconto))
 
 #______________________________________________________________________________________________
 
 #Desafio 13 leia o salário de um funcionário e mostre seu novo salário com 15% de aumento
+salario=float(input('Insira seu salário R$'))
+aumento=salario+(salario*15/100)
+print('Seu novo salário com um aumento de 15% é R${:.2f}'.format(aumento))
