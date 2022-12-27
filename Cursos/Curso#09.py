@@ -36,6 +36,13 @@
 #quantas letras ao todo(sem considerar espaços)
 #quantas letras tem o primeiro nome
 
+nome=str(input('insira seu nome:')).strip()
+print('Seu nome em maiúsculas é {}'.format(nome.upper()))
+print('Seu nome em maiúsculas é {}'.format(nome.lower()))
+print('Seu nome tem ao todo {} letras'.format(len(nome)-nome.count(' ')))
+print('Seu primeiro nome tem {} letras'.format(nome.find(' '))) 
+
+
 
 #______________________________________________________________________________________________
 
@@ -45,15 +52,29 @@
 #       dezena:3
 #       centena:8
 #       milhar:1
+num=int(input('informe um número: '))
+u=num//1%10
+d=num//10%10
+c=num//100%10
+m=num//1000%10
+print('Unidade {}'.format(u))
+print('Dezena  {}'.format(d))
+print('Centena {}'.format(c))
+print('Milhar {}'.format(m))
 
 
 #______________________________________________________________________________________________
 
 #Desafio24 Crie  um programa que leia o nome de uma cidade e diga se ela começa ou não com o nome 'SANTO'
 
+cid=str(input('Em que cidade você nasceu? ')).strip()
+print(cid[:5].upper() == 'SANTO') #SANTO tem 5 letras [:5]
+
 #______________________________________________________________________________________________
 
 #Desafio25 Crie um programa que leia o nome de uma pessoa e diga se ela tem 'SILVA' no nome
+nome=str(input('Qual é seu nome? ')).strip()
+print('Seu nome tem Silva?'.format('SILVA' in nome.upper())) 
 
 #______________________________________________________________________________________________
 
@@ -61,6 +82,13 @@
 #quantas vezes aparece a letra 'A'
 #em que posição ela aparece pela primeira vez
 #em que posição aparece pela última vez
+
+frase=str(input('Qual é sua frase: ')).upper().strip()
+print('A letra A aparece {} vezes na frase'.format(frase.count('A')))
+print('A primeira letra A apareceu na posição {}'.format(frase.find('A')+1))
+print('A última letra A apareceu na posição {}'.format(frase.rfind('A')+1))
+
+
 
 #______________________________________________________________________________________________
 
@@ -70,5 +98,8 @@
 #saida: primeiro=ana
 #       último=souza
 
-
+nome=str(input('Digite seu nome completo: ')).strip()
+n=nome.split()
+print('Seu primeiro nome é {}'.format(n[0]))
+print('Seu último nome é {}'.format(n[len(n)-1]))
 
