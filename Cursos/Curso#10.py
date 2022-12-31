@@ -10,7 +10,7 @@ jogador=int(input('Estou pensando em um número de 0 a 5! Tente advinhar:')) #jo
 if jogador == comp:
     print('Você acertou :)')
 else:
-    ('Não foi dessa vez')
+    print('Não foi dessa vez')
 
 
 #Desafio 29 Escreva um programa que leia a velocidade de um carro.
