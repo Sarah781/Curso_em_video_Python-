@@ -12,7 +12,17 @@ while sexo not in 'MmFf':
 
 #Desafio 58 Melhore o desafio 28 onde o computador vai pensar em um número entre 0 e 10.Só que agora o jogador
 #vai tentar adivinhar até acertar, mostrando no final quantos palpites foram necessários para vencer.
-
+from random import randint
+comp=randint(0,10) #faz o computador pensar
+print('Estou pensando em um número de 0 a 10!') #jogador tenta advinhar
+acertou = False
+palpites = 0
+while not acertou:
+    jogador = int(input('Qual é seu palpite? '))
+    palpites += 1
+    if jogador == comp:
+        acertou = True
+print('Acertou com {} tentativas! Parabéns'.format(palpites))
 
 
 #______________________________________________________________________________________________
